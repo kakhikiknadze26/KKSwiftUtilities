@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		AA27A8412517616C00C7D505 /* KKSwiftUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA27A84E2517655700C7D505 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27A84D2517655700C7D505 /* UtilityFunctions.swift */; };
+		AA27A8532517701B00C7D505 /* CorneredShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27A8522517701B00C7D505 /* CorneredShadowView.swift */; };
+		AA27A8572517764300C7D505 /* ScreenFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27A8562517764300C7D505 /* ScreenFactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA27A83C2517616C00C7D505 /* KKSwiftUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKSwiftUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSwiftUtilities.h; sourceTree = "<group>"; };
 		AA27A8402517616C00C7D505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA27A84D2517655700C7D505 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
+		AA27A8522517701B00C7D505 /* CorneredShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorneredShadowView.swift; sourceTree = "<group>"; };
+		AA27A8562517764300C7D505 /* ScreenFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,37 @@
 		AA27A83E2517616C00C7D505 /* KKSwiftUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				AA27A85025176FF200C7D505 /* Views */,
+				AA27A84C2517653500C7D505 /* Utilities */,
 				AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */,
 				AA27A8402517616C00C7D505 /* Info.plist */,
 			);
 			path = KKSwiftUtilities;
+			sourceTree = "<group>";
+		};
+		AA27A84C2517653500C7D505 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA27A84D2517655700C7D505 /* UtilityFunctions.swift */,
+				AA27A8562517764300C7D505 /* ScreenFactor.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AA27A85025176FF200C7D505 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA27A85125176FF900C7D505 /* ShadowedViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA27A85125176FF900C7D505 /* ShadowedViews */ = {
+			isa = PBXGroup;
+			children = (
+				AA27A8522517701B00C7D505 /* CorneredShadowView.swift */,
+			);
+			path = ShadowedViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA27A8532517701B00C7D505 /* CorneredShadowView.swift in Sources */,
+				AA27A8572517764300C7D505 /* ScreenFactor.swift in Sources */,
+				AA27A84E2517655700C7D505 /* UtilityFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
