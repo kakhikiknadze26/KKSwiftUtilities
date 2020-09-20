@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AA27A8412517616C00C7D505 /* KKSwiftUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA27A8492517624800C7D505 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27A8482517624800C7D505 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA27A83C2517616C00C7D505 /* KKSwiftUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKSwiftUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSwiftUtilities.h; sourceTree = "<group>"; };
 		AA27A8402517616C00C7D505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA27A8482517624800C7D505 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */,
 				AA27A8402517616C00C7D505 /* Info.plist */,
+				AA27A8482517624800C7D505 /* Test.swift */,
 			);
 			path = KKSwiftUtilities;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					AA27A83B2517616C00C7D505 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA27A8492517624800C7D505 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		AA27A8452517616C00C7D505 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kakhikiknadze.KKSwiftUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		AA27A8462517616C00C7D505 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
