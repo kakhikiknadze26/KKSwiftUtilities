@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AA27A8412517616C00C7D505 /* KKSwiftUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA27A8492517624800C7D505 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA27A8482517624800C7D505 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA27A83C2517616C00C7D505 /* KKSwiftUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKSwiftUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSwiftUtilities.h; sourceTree = "<group>"; };
 		AA27A8402517616C00C7D505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA27A8482517624800C7D505 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +48,6 @@
 			children = (
 				AA27A83F2517616C00C7D505 /* KKSwiftUtilities.h */,
 				AA27A8402517616C00C7D505 /* Info.plist */,
-				AA27A8482517624800C7D505 /* Test.swift */,
 			);
 			path = KKSwiftUtilities;
 			sourceTree = "<group>";
@@ -134,7 +131,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA27A8492517624800C7D505 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
