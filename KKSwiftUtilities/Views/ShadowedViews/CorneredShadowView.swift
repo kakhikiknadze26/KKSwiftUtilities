@@ -34,13 +34,29 @@ public class CorneredShadowedView: UIView {
     @IBInspectable public var shadowRadius: CGFloat = 3.0 { didSet { shadowLayer.shadowRadius = shadowRadius } }
     /// Radius of corner. Default is `0`
     @IBInspectable public var cornerRadius: CGFloat = .zero { didSet { setNeedsLayout(); layoutIfNeeded() } }
-    /// Adjusts shadow offset to fit device's screen by multiplying it on screen factor
+    /// Adjusts shadow offset to fit device's screen by multiplying it on screen factor.
+    /// - Warning: You must set screen factor first. E.g. when the app finishes launching.
+    /// ```
+    /// screenFactor = UIScreen.main.bounds.size.width/414
+    /// ```
     @IBInspectable public var adjustShadowOffsetToFitDevice: Bool { get { false } set { if(newValue) { fitShadowOffsetToDevice() } } }
     /// Adjusts shadow radius to fit device's screen by multiplying it on screen factor
+    /// - Warning: You must set screen factor first. E.g. when the app finishes launching.
+    /// ```
+    /// screenFactor = UIScreen.main.bounds.size.width/414
+    /// ```
     @IBInspectable public var adjustShadowRadiusToFitDevice: Bool { get { false } set { if(newValue) { fitShadowRadiusToDevice() } } }
     /// Adjusts corner radius to fit device's screen by multiplying it on screen factor
+    /// - Warning: You must set screen factor first. E.g. when the app finishes launching.
+    /// ```
+    /// screenFactor = UIScreen.main.bounds.size.width/414
+    /// ```
     @IBInspectable public var adjustCornerRadiusToFitDevice: Bool { get { false } set { if(newValue) { fitCornerRadiusToDevice() } } }
     /// Adjusts background layer's line width to fit device's screen by multiplying it on screen factor
+    /// - Warning: You must set screen factor first. E.g. when the app finishes launching.
+    /// ```
+    /// screenFactor = UIScreen.main.bounds.size.width/414
+    /// ```
     @IBInspectable public var adjustLineWidthToFitDevice: Bool { get { false } set { if(newValue) { fitLineWidthToDevice() } } }
     /// Corners available to round. Default is `.allCorners`
     public var roundingCorners: UIRectCorner = .allCorners { didSet { setNeedsLayout(); layoutIfNeeded() } }
